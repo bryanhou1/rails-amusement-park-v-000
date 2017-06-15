@@ -6,6 +6,4 @@ class AttractionPolicy < ApplicationPolicy
 	def create?
 		user.try(:admin)
 	end
-
-	
 end
