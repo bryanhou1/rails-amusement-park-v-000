@@ -1,0 +1,15 @@
+<h1>Attractions</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Tickets</th>
+		<th>Details</th>
+	</tr>
+
+	<%= render @attractions || 'No attractions' %>
+
+</table>
+
+<% if logged_in? && current_user.admin %>
+	<%= link_to 'New Attraction', new_attraction_path%>
+<% end %>

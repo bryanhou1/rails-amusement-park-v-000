@@ -1,0 +1,18 @@
+
+<h1><%="Name: #{@user.name}" %></h1>
+
+<h2>Attributes:</h2>
+<ul>
+	<li><%="Happiness: #{@user.happiness}" %></li>
+	<li><%="Nausea: #{@user.nausea}" %></li>
+	<li><%="Tickets: #{@user.tickets}" %></li>
+	<li><%="Height: #{@user.height}" %></li>
+	<li><%="Mood: #{@user.mood}" %></li>
+	<%='<li> ADMIN </li>' if @user.admin %>
+</ul>
+
+<%= link_to 'See attractions', attractions_path %>
+
+
+
+

@@ -19,16 +19,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="<%= root_url %>"/>Home</a>
+        <%= render 'layouts/navigation' %>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-           <!--  nav here -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
+      <%= render 'layouts/messages' %>
     <!-- content -->
     <div class="container"  role="main">
       <%= yield %>
